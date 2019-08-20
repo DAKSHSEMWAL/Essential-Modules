@@ -1,7 +1,7 @@
 These Are Some Of the Essential Modules Needed In Any Android App
 ![logo](logo.png)
 
-## [Splash Screen](/Splash%20Screen)
+## [Splash Screen](/SplashScreen)
 
 ## [Firebase Notification](/Notification%20Utils)
 
