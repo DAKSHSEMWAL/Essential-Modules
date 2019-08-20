@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="reset">Reset</string>
+    <string name="quiz">Quiz App</string>
+</resources>

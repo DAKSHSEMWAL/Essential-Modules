@@ -1,0 +1,66 @@
+<!--
+  ~ Copyright (c) This code is developed and maintained by Daksh Semwal
+  ~ Github Repository https://gitlab.com/parmindersingh419/ccube-android.git
+  -->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="five_padding">5dp</dimen>
+    <dimen name="forteen_padding">14dp</dimen>
+    <dimen name="tab_default_padding">30dp</dimen>
+    <dimen name="margin_default">20dp</dimen>
+    <dimen name="ten_padding">10dp</dimen>
+    <dimen name="tab_text_24">24sp</dimen>
+    <dimen name="tab_image_size">28dp</dimen>
+    <dimen name="tab_text_28">28sp</dimen>
+    <dimen name="img_size">18dp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_62">62dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="text_25">25sp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="dimen_15">15dp</dimen>
+    <dimen name="img_25">25dp</dimen>
+    <dimen name="tab_image_35">35dp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_45">45dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="img_35">35dp</dimen>
+    <dimen name="tab_image_6">6dp</dimen>
+    <dimen name="text_dimen_32">32sp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_75">75dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
+    <dimen name="nav_icon">25dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen1">1dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="img_40">40dp</dimen>
+    <dimen name="margin_115">115dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_165">165dp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="dimen_35">35dp</dimen>
+</resources>
