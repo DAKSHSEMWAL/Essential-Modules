@@ -7,4 +7,4 @@ These Are Some Of the Essential Modules Needed In Any Android App
 
 ## [Quiz App](/QuizApp)
 
-## [Login App](/Login%20Screen)
+## [Login App](/LoginScreen)
