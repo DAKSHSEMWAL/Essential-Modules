@@ -12,12 +12,17 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
+import com.google.firebase.analytics.FirebaseAnalytics
+
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // Obtain the FirebaseAnalytics instance.
+        val mFirebaseAnalytics: FirebaseAnalytics? = FirebaseAnalytics.getInstance(this);
         object : CountDownTimer(5000, 1000) {
             override fun onFinish() {
                 //bookText.visibility = View.GONE

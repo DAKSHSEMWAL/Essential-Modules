@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232323"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+        
+        <TextView
+            android:id="@+id/dialog_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="90dp"
+            android:text="Contact Name"/>
+        <TextView
+            android:id="@+id/dialog_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Phone Number"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btncall"
+            android:paddingStart="20dp"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/dialog_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:text="MOBILE CALL"/>
+        <Button
+            android:id="@+id/btnmessage"
+            android:paddingStart="20dp"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:drawableLeft="@drawable/dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="start"
+            android:text="USE MESSENGER"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_contact_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:src="@mipmap/profile1" />
+</RelativeLayout>
