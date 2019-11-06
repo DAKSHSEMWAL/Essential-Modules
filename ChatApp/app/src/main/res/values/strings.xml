@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">One to One Chat</string>
+
+    <!--exit notification-->
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="settings_file_name">com.app.sample.onetoone.temp</string>
+    <string name="error_authetication_failed">Authentication failed.</string>
+    <string name="error_could_not_connect">Could not connect</string>
+    <string name="error_login_failed">Login failed</string>
+    <string name="no_messages_yet">No Chat Yet</string>
+
+</resources>
