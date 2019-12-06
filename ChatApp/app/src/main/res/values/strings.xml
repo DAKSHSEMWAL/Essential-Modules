@@ -10,5 +10,13 @@
     <string name="error_could_not_connect">Could not connect</string>
     <string name="error_login_failed">Login failed</string>
     <string name="no_messages_yet">No Chat Yet</string>
+    <string name="type_message">Type message..</string>
+    <string name="send">Send</string>
+    <string name="phone">Email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="alreadyhaveaaccount">Already have a account</string>
 
 </resources>

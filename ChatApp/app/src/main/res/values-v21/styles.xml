@@ -4,6 +4,10 @@
 
     <style name="AppTheme" parent="BaseTheme">
         <item name="android:windowTranslucentStatus">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorControlHighlight">@color/colorAccentLight</item> 
         <item name="android:windowSharedElementsUseOverlay">false</item>
         <item name="android:windowContentTransitions">true</item>

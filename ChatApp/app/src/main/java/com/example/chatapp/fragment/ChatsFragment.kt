@@ -79,6 +79,7 @@ class ChatsFragment : Fragment() {
                 }
                 else
                 {
+                    progressBar!!.visibility = View.GONE
                     recyclerView.visibility=View.GONE
                     nomessage.visibility=View.VISIBLE
                 }

@@ -43,11 +43,11 @@ class ChatDetailsListAdapter(private val mContext: Context, private val mMessage
         if (convertView == null) {
             holder = ViewHolder()
             convertView = LayoutInflater.from(mContext).inflate(R.layout.row_chat_details, parent, false)
-            holder.time = convertView!!.findViewById<View>(R.id.text_time) as TextView
-            holder.message = convertView.findViewById<View>(R.id.text_content) as TextView
-            holder.lyt_thread = convertView.findViewById<View>(R.id.lyt_thread) as CardView
-            holder.lyt_parent = convertView.findViewById<View>(R.id.lyt_parent) as LinearLayout
-            holder.image_status = convertView.findViewById<View>(R.id.image_status) as ImageView
+            holder.time = convertView!!.findViewById(R.id.text_time)
+            holder.message = convertView.findViewById(R.id.text_content)
+            holder.lyt_thread = convertView.findViewById(R.id.lyt_thread)
+            holder.lyt_parent = convertView.findViewById(R.id.lyt_parent)
+            holder.image_status = convertView.findViewById(R.id.image_status)
             convertView.tag = holder
         } else {
             holder = convertView.tag as ViewHolder
@@ -56,11 +56,13 @@ class ChatDetailsListAdapter(private val mContext: Context, private val mMessage
         holder.message!!.text = msg.text
         holder.time!!.text = msg.readableTime
 
+
         if (msg.receiver.id == set.readSetting("myid")) {
             holder.lyt_parent!!.setPadding(15, 10, 100, 10)
             holder.lyt_parent!!.gravity = Gravity.LEFT
             holder.lyt_thread!!.setCardBackgroundColor(Color.parseColor("#FFFFFF"))
             holder.image_status!!.setImageResource(android.R.color.transparent)
+
         } else {
             holder.lyt_parent!!.setPadding(100, 10, 15, 10)
             holder.lyt_parent!!.gravity = Gravity.RIGHT

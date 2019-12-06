@@ -2,14 +2,10 @@ package com.example.chatapp.data
 
 
 import android.content.Context
-
+import android.util.Log
 import com.example.chatapp.model.ChatMessage
 import com.example.chatapp.model.Friend
 import com.example.chatapp.util.Constants
-import com.google.firebase.database.DataSnapshot
-
-import java.util.ArrayList
-
 import com.example.chatapp.util.Constants.NODE_ID
 import com.example.chatapp.util.Constants.NODE_IS_READ
 import com.example.chatapp.util.Constants.NODE_NAME
@@ -22,6 +18,8 @@ import com.example.chatapp.util.Constants.NODE_SENDER_NAME
 import com.example.chatapp.util.Constants.NODE_SENDER_PHOTO
 import com.example.chatapp.util.Constants.NODE_TEXT
 import com.example.chatapp.util.Constants.NODE_TIMESTAMP
+import com.google.firebase.database.DataSnapshot
+import java.util.*
 
 /**
  * Created by Bibaswann on 23-06-2017.
@@ -29,11 +27,7 @@ import com.example.chatapp.util.Constants.NODE_TIMESTAMP
 
 class ParseFirebaseData(context: Context?) {
 
-    private val set: SettingsAPI
-
-    init {
-        set = SettingsAPI(context)
-    }
+    private val set: SettingsAPI = SettingsAPI(context)
 
     fun getAllUser(dataSnapshot: DataSnapshot): ArrayList<Friend> {
         val frnds = ArrayList<Friend>()
@@ -47,8 +41,13 @@ class ParseFirebaseData(context: Context?) {
 
             if (set.readSetting(Constants.PREF_MY_ID) != id)
                 frnds.add(Friend(id, name, photo))
+            Log.i("Pref Id", Constants.PREF_MY_ID)
         }
         return frnds
+    }
+
+    fun getUserData(dataSnapshot: DataSnapshot) {
+
     }
 
     fun getMessagesForSingleUser(dataSnapshot: DataSnapshot): List<ChatMessage> {
@@ -179,4 +178,5 @@ class ParseFirebaseData(context: Context?) {
     private fun decodeText(msg: String): String {
         return msg.replace("#comma#", ",").replace("#braceopen#", "{").replace("#braceclose#", "}").replace("#equals#", "=")
     }
+
 }

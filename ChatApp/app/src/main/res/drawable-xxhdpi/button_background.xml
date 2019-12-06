@@ -1,0 +1,10 @@
+<!--
+  ~  Copyright (c) This code is developed and maintained by Daksh Semwal
+  ~ Github Repository https://gitlab.com/parmindersingh419/holybasilmediclinic-android.git
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:radius="@dimen/dimen_10"/>
+    <gradient android:startColor="#3dcdac"
+        android:endColor="#02A583"/>
+</shape>

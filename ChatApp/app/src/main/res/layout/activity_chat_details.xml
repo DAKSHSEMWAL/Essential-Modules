@@ -43,7 +43,6 @@
         android:background="@color/grey_bg"
         android:padding="5dp"
         android:orientation="horizontal">
-
         <androidx.cardview.widget.CardView
             android:id="@+id/lyt_thread"
             android:layout_width="0dp"
@@ -53,7 +52,7 @@
             app:cardCornerRadius="5dp"
             app:cardBackgroundColor="@android:color/white"
             app:cardElevation="2dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             app:cardUseCompatPadding="true">
 
             <EditText
@@ -62,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:background="@android:color/white"
                 android:gravity="top"
-                android:hint="type message.."
+                android:hint="@string/type_message"
                 android:padding="10dp" />
 
         </androidx.cardview.widget.CardView>
@@ -75,7 +74,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/button_send"
-            android:contentDescription="Send" />
+            android:contentDescription="@string/send" />
 
     </LinearLayout>
 </LinearLayout>

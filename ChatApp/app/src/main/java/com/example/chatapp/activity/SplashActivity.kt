@@ -35,7 +35,7 @@ import com.example.chatapp.util.Constants.NODE_ID
 import com.example.chatapp.util.Constants.NODE_NAME
 import com.example.chatapp.util.Constants.NODE_PHOTO
 
-class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
+class SplashActivity : AppCompatActivity() {
     private var signInButton: SignInButton? = null
     private var loginProgress: ProgressBar? = null
 
@@ -53,24 +53,24 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
 
         customToast = CustomToast(this)
 
-        // Assign fields
-        signInButton = findViewById<View>(R.id.sign_in_button) as SignInButton
+/*        // Assign fields
+        signInButton = findViewById<View>(R.id.sign_in_button) as SignInButton*/
         loginProgress = findViewById<View>(R.id.login_progress) as ProgressBar
 
         // Set click listeners
-        signInButton!!.setOnClickListener(this)
+        /*signInButton!!.setOnClickListener(this)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build()
         mGoogleApiClient = GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .enableAutoManage(this *//* FragmentActivity *//*, this *//* OnConnectionFailedListener *//*)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build()
+                .build()*/
 
         // Initialize FirebaseAuth
-        mFirebaseAuth = FirebaseAuth.getInstance()
+       /* mFirebaseAuth = FirebaseAuth.getInstance()
         set = SettingsAPI(this)
 
         if (intent.getStringExtra("mode") != null) {
@@ -102,7 +102,7 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         // for system bar in lollipop
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Tools.systemBarLolipop(this)
-        }
+        }*/
     }
 
     private fun bindLogo() {
@@ -117,6 +117,8 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
             override fun onAnimationEnd(arg0: Animation) {
                 // start animation2 when animation1 ends (continue)
                 splash.startAnimation(animation2)
+                intent= Intent(this@SplashActivity,RegisterActivty::class.java)
+                startActivity(intent)
             }
 
             override fun onAnimationRepeat(arg0: Animation) {}
@@ -139,14 +141,14 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         splash.startAnimation(animation1)
     }
 
-    override fun onClick(v: View) {
+/*    override fun onClick(v: View) {
         when (v.id) {
             R.id.sign_in_button -> signIn()
             else -> return
         }
-    }
+    }*/
 
-    private fun signIn() {
+/*    private fun signIn() {
         val signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient)
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
@@ -167,7 +169,6 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
             }
         }
     }
-
     private fun firebaseAuthWithGoogle(acct: GoogleSignInAccount) {
         val credential = GoogleAuthProvider.getCredential(acct.idToken, null)
         mFirebaseAuth!!.signInWithCredential(credential)
@@ -209,7 +210,7 @@ class SplashActivity : AppCompatActivity(), GoogleApiClient.OnConnectionFailedLi
         // An unresolvable error has occurred and Google APIs (including Sign-In) will not
         // be available.
         customToast.showError("Google Play Services error.")
-    }
+    }*/
 
     companion object {
 

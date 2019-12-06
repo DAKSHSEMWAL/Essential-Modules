@@ -2,7 +2,7 @@
 
 <resources>
 
-    <color name="colorPrimary">#9b59b6</color>
+    <color name="colorPrimary">#3dcdac</color>
     <color name="colorPrimaryDark">#8e44ad</color>
     <color name="colorPrimaryLight">#d7ccc8</color>
 
@@ -28,6 +28,9 @@
     <color name="warning">#ff9933</color>
     <color name="error">#8b0000</color>
     <color name="info">#000080</color>
+    <color name="buttonbackground">#555555</color>
+    <color name="textColor">#3dcdac</color>
     <color name="success">#008000</color>
+    <color name="white">#ffffff</color>
 
 </resources>

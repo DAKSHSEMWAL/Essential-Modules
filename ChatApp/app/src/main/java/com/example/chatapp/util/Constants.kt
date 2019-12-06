@@ -15,9 +15,12 @@ object Constants {
     val NODE_IS_READ = "isread"
 
     //User nodes
-    val NODE_ID = "id"
-    val NODE_NAME = "name"
-    val NODE_PHOTO = "photo"
+    val NODE_ID = "user_id"
+    val NODE_NAME = "user_name"
+    val NODE_EMAIl = "user_email"
+    val NODE_GENDER = "gender"
+    val is_docotor= "is_doctor"
+    val NODE_PHOTO = "profile_photo"
 
     val LOG_TAG = "fchat"
 
@@ -26,5 +29,8 @@ object Constants {
     val PREF_MY_ID = "myid"
     val PREF_MY_NAME = "myname"
     val PREF_MY_DP = "mydp"
+    val PREF_MY_EMAIL = "myemail"
+    val PREF_MY_GENDER = "mygender"
+    val PREF_MY_IS_DOCTOR = "myisdoctor"
 
 }

@@ -20,4 +20,12 @@
 
 
     <dimen name="recycler_item_size">192dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="dimen_25">25dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
 </resources>

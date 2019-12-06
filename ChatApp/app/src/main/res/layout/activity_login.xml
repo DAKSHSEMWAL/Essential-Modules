@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright (c) This code is developed and maintained by Daksh Semwal
+  ~ Github Repository https://gitlab.com/parmindersingh419/holybasilmediclinic-android.git
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:theme="@style/TextInputLayoutAppearance">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/phone"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/buttonbackground"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/text_16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:theme="@style/TextInputLayoutAppearance">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:inputType="textWebPassword"
+            android:textColor="@color/buttonbackground"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="@dimen/text_16" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_25"
+        android:layout_marginTop="@dimen/dimen_25"
+        android:layout_marginEnd="@dimen/dimen_25"
+        android:layout_marginBottom="@dimen/dimen_25">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_margin="@dimen/dimen_5"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
